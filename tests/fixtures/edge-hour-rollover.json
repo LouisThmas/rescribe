@@ -1,0 +1,22 @@
+{
+  "text": "",
+  "language": "en",
+  "finish_reason": "stop",
+  "truncated": false,
+  "segments": [
+    {
+      "text": "Late in the call",
+      "start": 3661.0,
+      "end": 3670.0,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "Very late",
+      "start": 7325.0,
+      "end": 7330.0,
+      "speaker": "SPEAKER_01"
+    }
+  ],
+  "speaker_segments": [],
+  "chunks": []
+}

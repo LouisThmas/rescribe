@@ -1,0 +1,40 @@
+{
+  "text": "",
+  "language": "en",
+  "finish_reason": "stop",
+  "truncated": false,
+  "segments": [
+    {
+      "text": "I agree",
+      "start": 0.0,
+      "end": 2.0,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "Yes",
+      "start": 2.0,
+      "end": 2.3,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "that",
+      "start": 2.3,
+      "end": 2.6,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "is",
+      "start": 2.6,
+      "end": 2.9,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "completely",
+      "start": 3.0,
+      "end": 5.0,
+      "speaker": "SPEAKER_00"
+    }
+  ],
+  "speaker_segments": [],
+  "chunks": []
+}

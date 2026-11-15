@@ -1,0 +1,40 @@
+{
+  "text": "",
+  "language": "en",
+  "finish_reason": "stop",
+  "truncated": false,
+  "segments": [
+    {
+      "text": "Start",
+      "start": 0.0,
+      "end": 1.0,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "Mm",
+      "start": 1.0,
+      "end": 1.5,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "middle",
+      "start": 1.5,
+      "end": 2.0,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "Yeah",
+      "start": 2.0,
+      "end": 2.5,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "end",
+      "start": 2.5,
+      "end": 3.0,
+      "speaker": "SPEAKER_00"
+    }
+  ],
+  "speaker_segments": [],
+  "chunks": []
+}

@@ -1,0 +1,1627 @@
+{
+  "text": "Hi. Hello. How are you? Good. And you? Not bad. Okay. How's everything? Uh, not bad. Not bad. Um, I'm in internship right now, so. And I'm guessing because of that, you asked me to just actually reply to them. Yeah, that's right. Yeah, yeah. So I'll just I'll just present myself real quick. I'm a I'm a student in software engineering at Polytechnic, and I'm just really interested in like everything that's green energy and software at the same time, particularly for software. So I came across like this great DR project, and I was like super interested in how it worked and what a bit was the thought process behind it. So, do you mind just quickly like presenting yourself, so I could get an idea before before before doing that one. Right now, you are doing the internship, yes? Yes. What what what business is that? Oh, I'm a I'm a software developer in TACT. No, I mean like the company. Oh, intact. Intact. Yeah. Okay. And you are you are doing your software engineering. You are in fourth year. I'm in. Yeah, I'm in third third year. Well, the last semester, my third year right now. Yeah. So it's gonna be just like like a startup report. Okay. I'm asking that those like question to you to to understand what level of explanation I have. Yeah. Okay, so here I'm. I'm. I'm university prof. At that time, that we we were like running the project. I was like the postdoc. Okay, and somehow I was the. Project, project. If you want, just like say it like that. The the project came with multiple objectives. One was the communication, like mesh configuration for the for the neighborhood. The contribution of that part came from Prof at the University of Colton. Mohammed Ibn Nukala. Okay. Okay. And then another aspects was was managing the transformer overloading, which was initially like done by Professor Shaiu at the Carlton University, later by us. And then the whole like platform of communicating from home energy management system to what we call it like transformer agent, and then to the home energy like HEMS. As a matter of like home energy management system and DMS distributed energy management system at the at the top at the utility was done by us and the development was providing this servers clients platforms user interface everything okay to start like sending the communication to the the transformer agent transformer agent to the customer agent and home energy management system. The idea was like having some sort of central control at the same time of like distributed control. Okay, centrally because sometimes utility wants to do the the curtailment, demand response, and those stuff, and locally because sometimes the transformer get overheated. And then, regardless of whatever is like happening, it it requires to send the signal directly to the alliance to curtail the the loads down, in order to like so it it requires some sort of like prediction. On transformer loading prediction on the hot hotspot point, okay. Prediction on the weather prediction on the residential loads. At that time, we have used ARIMA as a matter of like, ah, regression for the for the optimization and at the same time like prediction. If I recall it correctly, the we utilize multiple home energy management system as a platform to be integrated. Okay. Uh, so it was like uh. Brand agnostic, so it doesn't matter what whatever is the brand for the for the battery and and solar inverters. We have used Panasonic. One of the reasons that we have used that was the fact that. There was no policy in place for discharging the battery to the grid, and it was like required some sort of brand to. Give us some sort of like flexibility to change the firmware and discharge the the battery to the grid as well. So it was not only like making money by offsetting the load through the battery, but making the money on like selling reselling the energy to the grid. Okay. As you know, majority of the the products are not exporting the power of the battery to the grid because it's not ready. Okay. I think that's all. Everything about the project. But there was like on the technology on the panel side, it was like the the more solar like panels, monofacial. Okay. Because it was like residential, not much of like difference. Although part of the the researchy part of that one at the top of art building, we have used bifacial panels. Okay. To test the performance, so an array of like monofacial and bifacial will use. Still, like we we are using. That on the inverter technology, we have used the string inverters and modular inverters in two different like technologies. Again, to compare the pros and cons of each other. They were not installed at people houses. It was like research at the at the research center, rather than just like going. Because the project was like two phase, or we can say always like two, two phases. One phase is like development on the piloting, and one phase is like competitive research. Okay. At the edge. Yeah. What else I could share? That's all. That's all. What's your question? Well, because I'm trying. I just saw like a snippet about it, right? It's like from what I understand it. It allows like I saw this thing about supply and demand. It allows like a better or like more precise supply and demand, and for like people to put back energy into the grid. But like you know, I'm not like technically versed in all of this field. I I was just curious like how that works and how that enables you know a more like widespread PV adoption in. Like a country like Canada. What they can. Give you as a clue, we have we have a couple of like publication on that one. But with agents, because it was like multiple agents like making decision, we have used game theoretic like approach. Yeah. To make sure what would be the best decision for everyone, I think we have we have maybe one or two publication on that. For prediction, as I said, we have to use like ARIMA. At that time, was new, but these days is well established. It's not something I would say. Reading like novel on optimization, we have used mixed integer linear program. At that time, was like novel. These days are well established. But like from the architecture point of view, there are like many novelties and cool stuff on that one on the architecture side. Okay. For example, we have used i302030.5, which is both like interoperability. We have deployed the full server for that. Okay. As a matter of incentive for the for the people, we have provided the report. The report was supposed to be published, but I don't know if Hydro Ottawa decided to make it public. I remember at some point it was a public, but they had decided to. to to to not make it public. I think it was some sort of financial like things between between Hydro Ottawa and. And and I can I'm I'm guessing. What does that mean? Like there was a money stuff. So this this is about like the money again. Okay. Maybe that was like some invoice again. So I don't know exactly. But the report we we prepared the as report we we prepared a signature and requirement document. Maybe two hundred pages of like requirement document. Because because the project was done by us, but the main contractor was Hydro Ottawa. Okay. This was like a industry-led project. They were like responsible for for the report and collecting money, and then they they paid to to university. Okay, wait. So Hydro Ottawa asked for a system like that, but did they say like Like what led them to want a system like that? No, they. I do. I thought had some sort of like general idea for the requirement document. It was us to just like get those general requirement and delineate it to detailed specification and detailed requirement document. Okay. So no, at the at the start it was not really. Crystal clear of what we are going to do, of course, because it was for the first time. But at the end, as I said, it was it was quite like success project with with the significant document. Yeah. Okay. Do I have those document maybe somewhere in my like hard drive? I think it's like one. But even if I have it, I cannot trade because I'm not. I'm the I'm the editor of the the document, but I'm not the owner of it. Ah, okay, yeah, okay. I mean that's okay. I just want to know like broadly because I'm interested in like how it helps. Like, like what's the advantage of people to use this, right? Like if I'm if I'm for example a house and I have solar panels on my house, like. What can I do with a system like that? Can I, like, it? Does it reduce my bill? Like, absolutely. So, the incentive to the people was, if you want to just like look at that one. It came from, of course, the money side. Yeah. Because, because if if you are assuming it's going to be like adopted, it it generates the the energy, and you can utilize the battery. You can charge the battery at the at the right moment and discharge it whenever the peak is is is high. Yeah. At some point, you can participate in the ancillary services. Not only demand response, you can you can use it for the frequency regulation, ramp up those like ancillary services. We have tested those things, and the outcome was really promising as a matter of like contribution and response time from those like commands. But we haven't ended up to just like say like how much exactly would be the benefit? Okay. The benefit to to customer. We know how much was the benefit to the utility. Hmm. But a portion of that benefit should go back to the to the customer. Hundred percent. How much should just like go back to the customer requires like having a detailed understanding of overhead, some other like other costs. And then a portion of that fund can go to the customer. These days, all of those like stuff that we have done these days, there are new policies. I think they call it. For example, one charge is just like leading people to participate into those like program, led them to just like connect their vehicle. Yeah. And I think yeah, for the subscription, they can just like save like fifteen dollars and and seventeen cents or something like that for every you know what's hour that they are participating, gonna be beneficial to us. Okay. So yeah, so those are like coming together, and they have just like came to those like numbers for sure. It was like pilots. But at that time, we just like calculated the benefit for the utility, not for the customer. Okay, so was it more designed with the utility in mind than the customer? Not really. No, if if if if you're like thinking like that. No technology could be adopted by people. Yeah, okay. Has to be just like being incentive, but the incentive was already into the the the design by itself because you have TV, you have battery, you are just like discharging. Yeah. So technically, even like a portion of Those things like that. We have like a study on the return of investment for that one. I think we we we came to just like fact that the return of investment is like seven years. Okay. Okay. But note that that one was the battery technology on on those years. These days, the battery is way way cheaper. The PV is way cheaper. The inverter is like very cheap in these days. Yeah, could be these days. These days could be just like five years. Yeah, I I heard that like all these parts are getting really cheap and like even inverters are like almost selling at a loss or something, but. Yeah, I think compared to two thousand seventeen that we have started, it's been like almost ten years, and it was a significant change. Okay, wow. Yeah. So I want I want to ask because you mentioned game theory. Is that like part of the utilities and client like relationship where they sort of both win, like? Actually, there are three agents. One is the utility. One is the transformer itself, and a couple of other, okay, customers. So, from the category, we have three categories of players. But but on the customer side, there are multiple players working together. Right. This is again so you cannot really solve it with some sort of other optimization approaches because decision of each layer is like affecting on the other layers. Right. Okay. There is there is a publication on that one. Okay, I'll I'll look more into that. And there are some sort of like financial analyses on that as well. Yeah, the author is me, Henry Schriner, and David Wright. David Wright was like dealing with the financial side. Okay, David Wright, you said. Yes. Okay, I'll I'll look into that because that's pretty interesting. But I'm curious about in the project, like what worked really well and what didn't work really well, like when you were developing it. What was the most problematic part? Was the mesh Wi-Fi. Okay. Because. Wi-Fi is not designed to be meshed, no. Right, and it was like making the interference, and we had many issues on that side. Not really on the algorithm, not so, not on like communication, but just nothing. But Wi-Fi, I think it was it was not really a suitable choice to to make a mission as well with Wi-Fi. Later, after those, that things you know that we we have Halo, which comes with some sort of embedded routing algorithm and loss calculation and better penetration. That one was the most probable one before. Rather than that, even like for security at that time, we have we have used the. The best practices. At that time, like TLS 1.2 was was the best. We had used it. Yeah, part of like 512 accepted bytes was like used. Many things was like updated for that time. Yeah. It was very promising on many aspects. Eventually, we we identified okay, the Wi-Fi. So that one also was a lesson learned technically on on the Wi-Fi. Like on then that no everything was okay. Everything went smoothly. You didn't have any issue with like, for example, data like lack of data or integration with other interfaces. Oh, oh, not really. Okay. So that out of that one, we have also provided some sort of interfaces to make the. The technology into the hardware. Many, I think, it was like more than eighteen thousand line of the code at that time. Wow! At the era, at the era of no AI, no LLM, generating that number of like code was like super crazy. Yeah, manually. Yeah, hundred percent. But no, it was really good project. I don't know why why Hydro Ottawa. Maybe they they are using that one because I went to the industry after my postdoc. Okay, but from the patent from the technology, it was really good. Project. I don't know what what what what was the outcome of. As I said, we are not the owner of the project. Yeah, I don't know myself. But they they never came to guys with an update because if they didn't publish it, like I'm curious to know, like why they. I I know I know even. It was the second version of that one. They called GradDR version two my gen. Okay. If you want to just like. Check what happens after that. Search for Mygen. Mygen and yes, M I G E N. Okay. Why Mygen? Don't ask me. Okay. They they branded as Mygen, and I believe this is still like going forward with the integration of of of EVs. Of of what? EV. What is what is that? Electric vehicle. Oh, oh, right. Yeah. Okay. Yeah. Sorry. Um. Okay. Uh. So except for that, I'm also curious about like. Well, I was gonna ask you about the status of the project, but, like, it's weird that you guys don't get an update. No, is this like normal in, in research? Yes. You're gonna just like research. the The nature of the research is is the fact that whenever some product goes to the product, yeah, it's not research anymore. Okay, so you're not really interested in like the business case or me myself. Yeah. No, I'm a researcher. Right. Okay. No, I, I, I, I want like my own business. Yes. Right. But my own like business has nothing in my research. Research is research. Right. Whether is the profit is like doing is eighty percent research, twenty percent development. Hmm. Yeah. And if we are not doing that, one insert won't pay us because they want something new and novel. Yeah. Something is is in developments, so a company can hire engineers like you to do it for them. Right. Ah. Okay. And and the the point is is that so whenever the product is mature enough, they go and like hire interns, engineers, to do it further development. Government is not paying. Them to use free resources to develop their product. Okay, wow. So you're like, like the research is just like for an idea, and then it's sort of like a prototype, and then they implement the final version. Yeah. So what we can say, this is R and D. A portion is like R, another portion is D. So we have to be very careful about not leaning more toward the development. We are not providing free resources to those companies. Right. If they want to develop some product, they have to just like spend from their part. Okay. If this is just like matter of research and high risk, yes, government helps them to reduce it. Okay. But we should not utilize a student as a free resources for them. Okay. Okay, I I didn't know that. I because you you tell me eighteen thousand lines of code. I thought it would be like, you know, that's the development, right? Maybe so. Maybe maybe I'm pretty sure they are utilizing those. I'm sure, but maybe they have. As I said, I I know they have like rebranded as MyJet, but what happened after that? I'm not. I know something, but I'm not misleading you by just like having my, my like overhearing of of the of the product and project. Okay. But yes, it was it was very successful. Like project again. You are looking at the the customer perspective. Utility looks at their perspective. And always, like, remember: if you want to just like make, you you want to just like you you are asking those questions too. To do something for your own business, what's the purpose of this? It is okay if you are just like making your own business. That's fine. Right. Well, I'm. I'm just interested in like everything solar. Eventually, like I'd like to accelerate that adoption in in Canada, particularly. Let's let's say if you want to just like run run your own business. Yeah. Okay. Think about that. If if the idea is Is a daily need of two hundred people. Daily need of like two hundred people. Forget about that. Okay. If this is a daily need of thousand and more, this is a good idea. Right. If this is a weekly need of weekly need of. Five thousand like people do it. Right. So in this case, this is something like that. So this is not like a daily need, but maybe it's a weekly need, maybe monthly need, but it affects like too many people. Right. Maybe it's a good business, and it is actually a good business. But there are many component into this like business. One portion is like software, another portion is a hardware. Yeah. If if you are like thinking on the software side, you need to just like think about what is other like software available. There are some software available to just like manage these these these things. And and the other question that you want to just like ask yourself: you want to just like make a revenue. Right by selling license or by, like, recurrent like revenue from the commissions. So. This, this days, selling license is is yeah, it's not really hot, yeah. And you have to just like make make a recording like yeah, like a subscription or like subscription or any just like transaction. You can just like take ten percent, five percent of this, and provide something affordable and free. Then you are making money out of the. So what what you are like thinking? Either you have to just like have a software, sell the software as a white label software, and then ask them whatever your customer is like making. Give me two percent. Right. Yeah. Or you can just like make it, like, like an app or available on the market software, and then okay, say you can use the software for free, but for managing the stuff, give me for every transaction, give me two cents, three cents. Yeah, yeah. Okay, okay. This on the software side, but if you are like thinking on the whole like ecosystem. Getting into the hardware territory is a bit like challenging because it is very hard to compete with China. You can white label those as well. So you can you can white label inverters and say you are not manufacturing those things. But you are labeling those things and sell it on, on the brand of Louis Thomas, right? Yeah. Okay. And then, then, if the customer wants those like hardware, you are just like buying from China, label it as a Louis Thomas, and sell it. Yeah. Then you will just like integrating those things. We call it like white label hardware, white label like software, many things. Anyhow, this is because I've I've I've done this the same like startup, and it is really a good startup and successful startup. I'm saying yes. It is it is valuable, but depends on how you just like see the the business model. Okay, but what about like solar in general or like green energy in general? Do you think that's a field where there's like a lack of like players wanting to do like novel ideas to push it? Or what I'm thinking, quite like frankly, solar is a good business, but not for China. Yeah, yeah, for sure. But think about think about like what comes with with the solar. Think about what other like resources could be available. It looks like renewable energy, like something around solar, like that's required, or just just just in in case of like something like that. Okay, so think about if you if you want to just like do something with solar, can it just like integrate it with the small wind turbine? Can just like integrate it with the battery, and then. And as again, so if this is a daily need of of five hundred people or thousand people, yeah, then you are we are thinking about the community, right? A community. So let's say you want to just like have this feature part of the. a a community in in in the north region, so or one First Nation community, or you want to just like offer it as a as a As a integrable software with the business buildings or high-rise buildings, think about that one. So the principle—I have another meeting, but principle is like simple. Look at look at the the turnover in the market. See which which part is earning money, and then try to just like squeeze your solution on that. In in the in the high turnover places, yeah. If you, for example, if you see, high rise buildings are just like coming with the software. for the for the building energy management system or like total building management. The building management comes with the rent management, energy management, and then you can you can think about that one. If if they are if they are selling good, can you just like offer something to them to manage batteries, chargers, solars, and then. They would like to just like adopt those like technology, but they they don't have resources to integrate it in their platform because they don't have the knowledge. Or if if there is a community out there and the community is not connected to the grid and they have solar, they have the battery and everything, but they cannot manage it, can you just like run this and like let the community to work together? So look look at look at where is the where is the turnover of the money and if you would be able to take two percent of that money, yeah, then you are making the backbone of the company. Wow, that's amazing! Thank you so much for your advice. No worries, I'll let you run to your other meeting. But thank you so much for taking the time for me. Take care. Let me know if you have any other questions. Of course. Thank you so much. Okay. Bye. Bye.",
+  "language": "",
+  "finish_reason": "eos",
+  "truncated": false,
+  "segments": [
+    {
+      "text": "Hi",
+      "start": 44.1820625,
+      "end": 47.2220625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "Hello",
+      "start": 49.7020625,
+      "end": 50.022062500000004,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "How",
+      "start": 50.022062500000004,
+      "end": 50.3420625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "are",
+      "start": 50.3420625,
+      "end": 50.3420625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "you",
+      "start": 50.3420625,
+      "end": 50.3420625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "Good",
+      "start": 50.7420625,
+      "end": 51.0620625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "And",
+      "start": 51.0620625,
+      "end": 51.4620625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "you",
+      "start": 51.4620625,
+      "end": 51.4620625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "Not",
+      "start": 52.8220625,
+      "end": 53.0620625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "bad",
+      "start": 53.1420625,
+      "end": 53.4620625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "Okay",
+      "start": 54.3420625,
+      "end": 54.7420625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "How's",
+      "start": 56.662062500000005,
+      "end": 56.8220625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "everything",
+      "start": 56.8220625,
+      "end": 57.3020625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "Uh",
+      "start": 57.7820625,
+      "end": 58.3420625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "not",
+      "start": 58.4220625,
+      "end": 58.8220625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "bad",
+      "start": 58.8220625,
+      "end": 59.2220625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "Not",
+      "start": 59.2220625,
+      "end": 59.3820625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "bad",
+      "start": 59.3820625,
+      "end": 60.022062500000004,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "Um",
+      "start": 60.022062500000004,
+      "end": 60.1820625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "I'm",
+      "start": 60.8220625,
+      "end": 60.9820625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "in",
+      "start": 60.9820625,
+      "end": 61.2220625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "internship",
+      "start": 61.2220625,
+      "end": 61.8620625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "right",
+      "start": 61.8620625,
+      "end": 61.942062500000006,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "now",
+      "start": 61.942062500000006,
+      "end": 62.1820625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "so",
+      "start": 62.1820625,
+      "end": 62.9020625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "And",
+      "start": 64.0836875,
+      "end": 64.5636875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "I'm",
+      "start": 65.0436875,
+      "end": 65.2036875,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "guessing",
+      "start": 65.2036875,
+      "end": 65.60368749999999,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "because",
+      "start": 65.60368749999999,
+      "end": 65.8436875,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "of",
+      "start": 65.8436875,
+      "end": 65.9236875,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "that",
+      "start": 66.0036875,
+      "end": 66.2436875,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "you",
+      "start": 66.7236875,
+      "end": 66.7236875,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "asked",
+      "start": 66.8036875,
+      "end": 67.1236875,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "me",
+      "start": 67.1236875,
+      "end": 67.2036875,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "to",
+      "start": 67.2036875,
+      "end": 67.2836875,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "just",
+      "start": 67.2836875,
+      "end": 67.5236875,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "actually",
+      "start": 67.5236875,
+      "end": 68.0036875,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "reply",
+      "start": 68.0036875,
+      "end": 68.2436875,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "to",
+      "start": 68.2436875,
+      "end": 68.2436875,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "them",
+      "start": 68.4036875,
+      "end": 68.6436875,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "Yeah",
+      "start": 68.8036875,
+      "end": 69.2036875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "that's",
+      "start": 69.2036875,
+      "end": 69.4436875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "right",
+      "start": 69.4436875,
+      "end": 69.6836875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "Yeah",
+      "start": 69.7636875,
+      "end": 70.0836875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "yeah",
+      "start": 70.4836875,
+      "end": 70.96368749999999,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "So",
+      "start": 71.3636875,
+      "end": 71.7636875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "I'll",
+      "start": 71.7636875,
+      "end": 71.8436875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "just",
+      "start": 71.8436875,
+      "end": 72.1636875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "I'll",
+      "start": 72.2436875,
+      "end": 72.4036875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "just",
+      "start": 72.4036875,
+      "end": 72.7236875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "present",
+      "start": 72.8836875,
+      "end": 73.2036875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "myself",
+      "start": 73.2036875,
+      "end": 73.6036875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "real",
+      "start": 73.6036875,
+      "end": 73.7636875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "quick",
+      "start": 73.7636875,
+      "end": 74.1636875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "I'm",
+      "start": 74.2436875,
+      "end": 74.8036875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "a",
+      "start": 74.8036875,
+      "end": 74.8036875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "I'm",
+      "start": 75.0436875,
+      "end": 75.1236875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "a",
+      "start": 75.1236875,
+      "end": 75.1236875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "student",
+      "start": 75.1236875,
+      "end": 75.6836875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "in",
+      "start": 75.6836875,
+      "end": 75.7636875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "software",
+      "start": 75.7636875,
+      "end": 76.0836875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "engineering",
+      "start": 76.0836875,
+      "end": 76.6436875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "at",
+      "start": 76.8036875,
+      "end": 76.96368749999999,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "Polytechnic",
+      "start": 76.96368749999999,
+      "end": 77.6836875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "and",
+      "start": 78.1636875,
+      "end": 78.2436875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "I'm",
+      "start": 78.2436875,
+      "end": 78.3236875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "just",
+      "start": 78.3236875,
+      "end": 78.5636875,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "really",
+      "start": 78.5636875,
+      "end": 78.8036875,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "interested",
+      "start": 78.8036875,
+      "end": 79.2836875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "in",
+      "start": 79.2836875,
+      "end": 79.4436875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "like",
+      "start": 79.4436875,
+      "end": 79.68368749999999,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "everything",
+      "start": 79.68368749999999,
+      "end": 80.0836875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "that's",
+      "start": 80.0836875,
+      "end": 80.6436875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "green",
+      "start": 81.2836875,
+      "end": 81.5236875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "energy",
+      "start": 81.5236875,
+      "end": 82.2436875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "and",
+      "start": 82.4836875,
+      "end": 82.5636875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "software",
+      "start": 82.5636875,
+      "end": 83.1236875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "at",
+      "start": 83.1236875,
+      "end": 83.1236875,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "the",
+      "start": 83.1236875,
+      "end": 83.2036875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "same",
+      "start": 83.2036875,
+      "end": 83.4436875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "time",
+      "start": 83.4436875,
+      "end": 83.8436875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "particularly",
+      "start": 84.0836875,
+      "end": 84.5636875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "for",
+      "start": 84.5636875,
+      "end": 84.7236875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "software",
+      "start": 84.7236875,
+      "end": 85.2836875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "So",
+      "start": 85.8436875,
+      "end": 85.9236875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "I",
+      "start": 85.9236875,
+      "end": 86.3236875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "came",
+      "start": 86.3236875,
+      "end": 87.1236875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "across",
+      "start": 87.1236875,
+      "end": 87.7636875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "like",
+      "start": 87.7636875,
+      "end": 88.0836875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "this",
+      "start": 88.0836875,
+      "end": 88.4036875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "great",
+      "start": 88.6436875,
+      "end": 88.96368749999999,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "DR",
+      "start": 88.96368749999999,
+      "end": 89.5236875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "project",
+      "start": 89.68368749999999,
+      "end": 90.2436875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "and",
+      "start": 90.88368750000001,
+      "end": 91.2836875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "I",
+      "start": 92.060625,
+      "end": 92.140625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "was",
+      "start": 92.140625,
+      "end": 92.300625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "like",
+      "start": 92.300625,
+      "end": 92.460625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "super",
+      "start": 92.460625,
+      "end": 92.700625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "interested",
+      "start": 92.700625,
+      "end": 93.18062499999999,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "in",
+      "start": 93.18062499999999,
+      "end": 93.500625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "how",
+      "start": 93.580625,
+      "end": 93.740625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "it",
+      "start": 93.740625,
+      "end": 93.82062499999999,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "worked",
+      "start": 93.82062499999999,
+      "end": 94.220625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "and",
+      "start": 94.220625,
+      "end": 94.62062499999999,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "what",
+      "start": 94.780625,
+      "end": 95.020625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "a",
+      "start": 95.020625,
+      "end": 95.020625,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "bit",
+      "start": 95.020625,
+      "end": 95.26062499999999,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "was",
+      "start": 95.26062499999999,
+      "end": 95.580625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "the",
+      "start": 95.580625,
+      "end": 95.90062499999999,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "thought",
+      "start": 96.060625,
+      "end": 96.300625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "process",
+      "start": 96.300625,
+      "end": 96.62062499999999,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "behind",
+      "start": 96.62062499999999,
+      "end": 97.020625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "it",
+      "start": 97.020625,
+      "end": 97.18062499999999,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "So",
+      "start": 97.82062499999999,
+      "end": 98.060625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "do",
+      "start": 98.060625,
+      "end": 98.140625,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "you",
+      "start": 98.140625,
+      "end": 98.300625,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "mind",
+      "start": 98.300625,
+      "end": 98.700625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "just",
+      "start": 98.860625,
+      "end": 99.100625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "quickly",
+      "start": 99.100625,
+      "end": 99.660625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "like",
+      "start": 99.980625,
+      "end": 100.140625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "presenting",
+      "start": 100.220625,
+      "end": 100.700625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "yourself",
+      "start": 100.700625,
+      "end": 101.18062499999999,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "so",
+      "start": 102.140625,
+      "end": 102.140625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "I",
+      "start": 102.380625,
+      "end": 102.380625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "could",
+      "start": 102.380625,
+      "end": 102.54062499999999,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "get",
+      "start": 102.54062499999999,
+      "end": 102.700625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "an",
+      "start": 102.700625,
+      "end": 102.860625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "idea",
+      "start": 102.860625,
+      "end": 103.26062499999999,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "before",
+      "start": 103.34062499999999,
+      "end": 103.580625,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "before",
+      "start": 103.580625,
+      "end": 104.140625,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "before",
+      "start": 104.62062499999999,
+      "end": 105.18062499999999,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "doing",
+      "start": 105.420625,
+      "end": 105.660625,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "that",
+      "start": 105.740625,
+      "end": 106.060625,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "one",
+      "start": 106.060625,
+      "end": 106.460625,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "Right",
+      "start": 107.34062499999999,
+      "end": 107.500625,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "now",
+      "start": 107.500625,
+      "end": 107.660625,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "you",
+      "start": 107.660625,
+      "end": 107.82062499999999,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "are",
+      "start": 107.82062499999999,
+      "end": 107.90062499999999,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "doing",
+      "start": 107.90062499999999,
+      "end": 108.06062499999999,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "the",
+      "start": 108.06062499999999,
+      "end": 108.140625,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "internship",
+      "start": 108.140625,
+      "end": 108.62062499999999,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "yes",
+      "start": 108.62062499999999,
+      "end": 109.020625,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "Yes",
+      "start": 109.260625,
+      "end": 109.82062499999999,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "What",
+      "start": 110.62062499999999,
+      "end": 110.780625,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "what",
+      "start": 110.780625,
+      "end": 111.020625,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "what",
+      "start": 111.420625,
+      "end": 111.660625,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "business",
+      "start": 111.660625,
+      "end": 112.06062499999999,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "is",
+      "start": 112.06062499999999,
+      "end": 112.220625,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "that",
+      "start": 112.220625,
+      "end": 112.460625,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "Oh",
+      "start": 112.940625,
+      "end": 113.18062499999999,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "I'm",
+      "start": 113.18062499999999,
+      "end": 113.500625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "a",
+      "start": 113.500625,
+      "end": 113.82062499999999,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "I'm",
+      "start": 113.90062499999999,
+      "end": 114.06062499999999,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "a",
+      "start": 114.06062499999999,
+      "end": 114.140625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "software",
+      "start": 114.140625,
+      "end": 114.460625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "developer",
+      "start": 114.460625,
+      "end": 114.940625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "in",
+      "start": 115.020625,
+      "end": 115.260625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "TACT",
+      "start": 115.260625,
+      "end": 115.500625,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "No",
+      "start": 116.73849999999999,
+      "end": 116.8185,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "I",
+      "start": 116.8185,
+      "end": 116.8985,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "mean",
+      "start": 116.8985,
+      "end": 117.0585,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "like",
+      "start": 117.0585,
+      "end": 117.21849999999999,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "the",
+      "start": 117.21849999999999,
+      "end": 117.21849999999999,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "company",
+      "start": 117.21849999999999,
+      "end": 117.7785,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "Oh",
+      "start": 118.4185,
+      "end": 118.57849999999999,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "intact",
+      "start": 118.57849999999999,
+      "end": 119.0585,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "Intact",
+      "start": 120.01849999999999,
+      "end": 120.4185,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "Yeah",
+      "start": 120.73849999999999,
+      "end": 120.8985,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "Okay",
+      "start": 121.5385,
+      "end": 121.85849999999999,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "And",
+      "start": 122.57849999999999,
+      "end": 123.29849999999999,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "you",
+      "start": 123.85849999999999,
+      "end": 124.01849999999999,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "are",
+      "start": 124.01849999999999,
+      "end": 124.2585,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "you",
+      "start": 124.2585,
+      "end": 124.4185,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "are",
+      "start": 124.4185,
+      "end": 124.49849999999999,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "doing",
+      "start": 124.49849999999999,
+      "end": 125.1385,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "your",
+      "start": 125.29849999999999,
+      "end": 125.6985,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "software",
+      "start": 125.6985,
+      "end": 126.0985,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "engineering",
+      "start": 126.0985,
+      "end": 126.57849999999999,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "You",
+      "start": 126.57849999999999,
+      "end": 126.73849999999999,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "are",
+      "start": 126.73849999999999,
+      "end": 126.8185,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "in",
+      "start": 126.8185,
+      "end": 127.3785,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "fourth",
+      "start": 127.85849999999999,
+      "end": 128.17849999999999,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "year",
+      "start": 128.17849999999999,
+      "end": 128.5785,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "I'm",
+      "start": 129.05849999999998,
+      "end": 129.5385,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "in",
+      "start": 129.5385,
+      "end": 129.7785,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "Yeah",
+      "start": 130.4185,
+      "end": 130.6585,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "I'm",
+      "start": 130.6585,
+      "end": 130.6585,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "in",
+      "start": 130.7385,
+      "end": 130.7385,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "third",
+      "start": 130.9785,
+      "end": 131.3785,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "third",
+      "start": 131.5385,
+      "end": 131.7785,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "year",
+      "start": 131.7785,
+      "end": 132.0185,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "Well",
+      "start": 132.0185,
+      "end": 132.17849999999999,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "the",
+      "start": 132.17849999999999,
+      "end": 132.33849999999998,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "last",
+      "start": 132.33849999999998,
+      "end": 132.6585,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "semester",
+      "start": 132.6585,
+      "end": 132.89849999999998,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "my",
+      "start": 132.89849999999998,
+      "end": 133.05849999999998,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "third",
+      "start": 133.05849999999998,
+      "end": 133.3785,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "year",
+      "start": 133.3785,
+      "end": 133.61849999999998,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "right",
+      "start": 133.61849999999998,
+      "end": 133.61849999999998,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "now",
+      "start": 133.61849999999998,
+      "end": 133.9385,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "Yeah",
+      "start": 134.49849999999998,
+      "end": 134.89849999999998,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "text": "So",
+      "start": 135.2185,
+      "end": 135.3785,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "it's",
+      "start": 135.3785,
+      "end": 135.4585,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "gonna",
+      "start": 135.5385,
+      "end": 135.6985,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "be",
+      "start": 135.6985,
+      "end": 135.8585,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "just",
+      "start": 135.8585,
+      "end": 136.0185,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "like",
+      "start": 136.0185,
+      "end": 136.17849999999999,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "like",
+      "start": 136.8185,
+      "end": 136.9785,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "a",
+      "start": 136.9785,
+      "end": 137.05849999999998,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "startup",
+      "start": 137.05849999999998,
+      "end": 137.3785,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "report",
+      "start": 137.3785,
+      "end": 137.7785,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "Okay",
+      "start": 138.0985,
+      "end": 138.3385,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "I'm",
+      "start": 138.8185,
+      "end": 138.9785,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "asking",
+      "start": 138.9785,
+      "end": 139.2985,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "that",
+      "start": 139.2985,
+      "end": 139.4585,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "those",
+      "start": 139.4585,
+      "end": 139.6985,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "like",
+      "start": 139.6985,
+      "end": 139.8585,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "question",
+      "start": 139.8585,
+      "end": 140.2585,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "to",
+      "start": 140.3385,
+      "end": 140.5785,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "text": "you",
+      "start": 140.5785,
+      "end": 140.5785,
+      "speaker": "SPEAKER_00"
+    }
+  ],
+  "speaker_segments": [
+    {
+      "speaker": "SPEAKER_00",
+      "start": 10.83096875,
+      "end": 11.269718750000003,
+      "text": ""
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 46.92659375,
+      "end": 47.297843750000006,
+      "text": "Hi"
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 49.710968750000006,
+      "end": 49.829093750000006,
+      "text": "Hello"
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 49.829093750000006,
+      "end": 50.031593750000006,
+      "text": "Hello How"
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 50.031593750000006,
+      "end": 51.46596875,
+      "text": "How Good And"
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 52.81596875,
+      "end": 54.82409375,
+      "text": "Not bad Okay"
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 56.62971875,
+      "end": 64.71284375,
+      "text": "How's everything Uh not bad Not bad Um I'm in internship right now so And"
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 64.71284375,
+      "end": 64.88159375000001,
+      "text": ""
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 64.88159375000001,
+      "end": 64.98284375,
+      "text": ""
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 64.98284375,
+      "end": 68.79659375,
+      "text": "I'm guessing because of that asked me to just actually reply them"
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 68.79659375,
+      "end": 78.29721875,
+      "text": "Yeah that's right Yeah yeah So I'll just I'll just present myself real quick I'm I'm student in software engineering at Polytechnic and I'm"
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 78.29721875,
+      "end": 78.82034375,
+      "text": "I'm just really interested"
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 78.82034375,
+      "end": 97.97346875000001,
+      "text": "interested in like everything that's green energy and software the same time particularly for software So I came across like this great DR project and I was like super interested in how it worked and what bit was the thought process behind it So"
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 97.97346875000001,
+      "end": 98.41221875000001,
+      "text": "So do you mind"
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 98.41221875000001,
+      "end": 103.05284375000001,
+      "text": "mind just quickly like presenting yourself could get an idea"
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 103.05284375000001,
+      "end": 112.92471875000001,
+      "text": "idea before before before doing that one Right now you are doing the internship yes Yes What what what business is that"
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 112.92471875000001,
+      "end": 115.50659375000001,
+      "text": "Oh I'm a I'm a software developer in TACT"
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 116.67096875000001,
+      "end": 118.52721875,
+      "text": "No I mean like company Oh"
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 118.52721875,
+      "end": 118.61159375000001,
+      "text": "Oh intact"
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 118.61159375000001,
+      "end": 118.62846875000001,
+      "text": "intact"
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 118.62846875000001,
+      "end": 119.13471875,
+      "text": "intact"
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 119.13471875,
+      "end": 121.10909375000001,
+      "text": "Intact Yeah"
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 121.46346875,
+      "end": 121.98659375000001,
+      "text": "Okay"
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 122.56034375,
+      "end": 129.25971875000002,
+      "text": "And you are you are doing your software engineering You are in fourth year I'm"
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 129.25971875000002,
+      "end": 134.98034375,
+      "text": "I'm in Yeah third third year Well the last semester my third year now Yeah"
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 135.13221875000002,
+      "end": 155.01096875000002,
+      "text": "So it's gonna be just like like a startup report Okay I'm asking that those like question to to understand what level explanation I have Yeah Okay so here I'm I'm I'm university prof At that time that we we were like running the project was like the postdoc"
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 155.04471875000002,
+      "end": 155.50034375,
+      "text": "Okay"
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 155.50034375,
+      "end": 162.97596875000002,
+      "text": "Okay and somehow I was the Project project If you want just like say like that The the"
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 162.97596875000002,
+      "end": 163.33034375,
+      "text": "the"
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 163.33034375,
+      "end": 163.60034375,
+      "text": "the"
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 163.60034375,
+      "end": 164.07284375,
+      "text": "the"
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 164.07284375,
+      "end": 164.30909375000002,
+      "text": "the"
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 165.03471875000002,
+      "end": 169.11846875,
+      "text": "project came with multiple objectives One"
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 169.77659375000002,
+      "end": 173.08409375000002,
+      "text": "was the communication like mesh configuration for the"
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 174.23159375,
+      "end": 174.92346875,
+      "text": "the"
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 175.48034375,
+      "end": 177.03284375,
+      "text": "neighborhood"
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 177.60659375,
+      "end": 186.24659375000002,
+      "text": "The contribution of that part came from Prof at the University of Colton Mohammed Ibn"
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 186.24659375000002,
+      "end": 186.34784375,
+      "text": "Okay"
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 186.34784375,
+      "end": 186.36471875,
+      "text": "Okay"
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 186.36471875,
+      "end": 186.49971875,
+      "text": "Okay"
+    }
+  ],
+  "chunks": [
+    {
+      "text": "",
+      "start": 0.0,
+      "end": 25.6566875,
+      "chunk_index": 0,
+      "language": "",
+      "finish_reason": "eos",
+      "truncated": false,
+      "generated_tokens": 3,
+      "max_new_tokens": 340
+    },
+    {
+      "text": "",
+      "start": 25.6566875,
+      "end": 44.1820625,
+      "chunk_index": 1,
+      "language": "",
+      "finish_reason": "eos",
+      "truncated": false,
+      "generated_tokens": 3,
+      "max_new_tokens": 255
+    },
+    {
+      "text": "Hi. Hello. How are you? Good. And you? Not bad. Okay. How's everything? Uh, not bad. Not bad. Um, I'm in internship right now, so.",
+      "start": 44.1820625,
+      "end": 63.2836875,
+      "chunk_index": 2,
+      "language": "English",
+      "finish_reason": "eos",
+      "truncated": false,
+      "generated_tokens": 44,
+      "max_new_tokens": 262
+    },
+    {
+      "text": "And I'm guessing because of that, you asked me to just actually reply to them. Yeah, that's right. Yeah, yeah. So I'll just I'll just present myself real quick. I'm a I'm a student in software engineering at Polytechnic, and I'm just really interested in like everything that's green energy and software at the same time, particularly for software. So I came across like this great DR project, and",
+      "start": 63.2836875,
+      "end": 91.660625,
+      "chunk_index": 3,
+      "language": "English",
+      "finish_reason": "eos",
+      "truncated": false,
+      "generated_tokens": 93,
+      "max_new_tokens": 373
+    },
+    {
+      "text": "I was like super interested in how it worked and what a bit was the thought process behind it. So, do you mind just quickly like presenting yourself, so I could get an idea before before before doing that one. Right now, you are doing the internship, yes? Yes. What what what business is that? Oh, I'm a I'm a software developer in TACT.",
+      "start": 91.660625,
+      "end": 116.4185,
+      "chunk_index": 4,
+      "language": "English",
+      "finish_reason": "eos",
+      "truncated": false,
+      "generated_tokens": 81,
+      "max_new_tokens": 330
+    }
+  ]
+}

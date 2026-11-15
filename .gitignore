@@ -1,24 +1,17 @@
-# Nestjs specific
-/dist
-/node_modules
-/build
-/tmp
+node_modules/
+dist/
+*.tgz
 
 # Logs
-logs
 *.log
 npm-debug.log*
-pnpm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
 
-# dotenv environment variable files
+# Environment
 .env
-.env.development
-.env.test
-.env.production
+.env.local
 
-# temp directory
-.temp
-.tmp
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
