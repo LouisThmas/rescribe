@@ -26,7 +26,7 @@ async function defaultWhich(bin: string): Promise<boolean> {
 }
 
 function toPlatform(p: string): Platform {
-  if (p === 'darwin' || p === 'linux' || p === 'win32') return p;
+  if (p === 'darwin') return p;
   return 'other';
 }
 

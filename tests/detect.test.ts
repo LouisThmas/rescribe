@@ -83,7 +83,7 @@ describe('detect', () => {
     const probe = await detect('Qwen/Qwen3-ASR-1.7B', {
       which: async () => false,
       env: {},
-      platform: 'linux',
+      platform: 'darwin',
       arch: 'x64',
       nodeVersion: '18.0.0',
       hfCacheDir: '/nope',

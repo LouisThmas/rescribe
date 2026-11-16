@@ -1,5 +1,7 @@
 # interview-rescribe
 
+Built for startup teams: practice better customer interviews and turn them into useful reports. Transcription runs locally on Apple Silicon—no paid transcription service needed. With LM Studio, reports can stay local too, keeping interview notes on your machine.
+
 Transcribe an interview and create a Mom Test report:
 
 ```bash
@@ -81,8 +83,6 @@ permissions. Environment variables override saved values:
 | `RESCRIBE_OPENROUTER_API_KEY` | OpenRouter key |
 | `RESCRIBE_LMSTUDIO_URL` | LM Studio API URL (default `http://localhost:1234/v1`) |
 | `HF_TOKEN` or `PYANNOTE_AUTH_TOKEN` | Hugging Face diarization token |
-| `RESCRIBE_ASR_BASE_URL` | OpenAI-compatible transcription API URL |
-| `RESCRIBE_ASR_API_KEY` | Transcription API key |
 
 ## Commands and options
 
@@ -110,8 +110,9 @@ Common `run` options:
 
 ## Platform notes
 
-macOS on Apple Silicon uses local `mlx-qwen3-asr`. Other platforms require an OpenAI-compatible
-transcription endpoint configured with `RESCRIBE_ASR_BASE_URL` and, if needed, `RESCRIBE_ASR_API_KEY`.
+Transcription is supported only on macOS with Apple Silicon and runs locally through
+`mlx-qwen3-asr`. Linux, Intel Macs, and Windows are not supported. Reports can use OpenRouter or
+LM Studio; use LM Studio if you want report generation to stay local too.
 
 ## Development
 

@@ -190,10 +190,11 @@ describe('buildDoctorRows', () => {
 
   it('skips mlx on non-Apple-Silicon platforms', () => {
     const rows = buildDoctorRows(
-      { ...baseProbe, platform: 'linux', arch: 'x64', mlxAsr: { present: false } },
+      { ...baseProbe, platform: 'other', arch: 'x64', mlxAsr: { present: false } },
       true,
     );
     expect(rows.find((r) => r.label === 'mlx-qwen3-asr')?.status).toBe('skip');
+    expect(rows.find((r) => r.label === 'Platform')?.status).toBe('miss');
   });
 
   it('skips diarization when it is disabled', () => {

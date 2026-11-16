@@ -16,7 +16,13 @@ export function buildDoctorRows(
   diarize: boolean,
   reportConfig?: ReportConfig,
 ): DoctorRow[] {
+  const mlxOk = probe.platform === 'darwin' && probe.arch === 'arm64';
   const rows: DoctorRow[] = [
+    {
+      label: 'Platform',
+      status: mlxOk ? 'ok' : 'miss',
+      detail: mlxOk ? 'macOS Apple Silicon' : `unsupported (${probe.platform}/${probe.arch})`,
+    },
     {
       label: 'Node',
       status: probe.nodeMajor >= 20 ? 'ok' : 'miss',
@@ -34,7 +40,6 @@ export function buildDoctorRows(
     },
   ];
 
-  const mlxOk = probe.platform === 'darwin' && probe.arch === 'arm64';
   rows.push({
     label: 'mlx-qwen3-asr',
     status: !mlxOk ? 'skip' : probe.mlxAsr.present ? 'ok' : 'miss',

@@ -390,6 +390,12 @@ program
     );
     console.log(renderDoctor(report));
 
+    if (!mlxSupported()) {
+      ui.outro(red('Transcription is supported only on macOS with Apple Silicon.'));
+      process.exitCode = 1;
+      return;
+    }
+
     if (report.healthy) {
       ui.outro(green('Everything looks good.'));
       return;
@@ -458,7 +464,6 @@ program
   .argument('<audio>', 'audio file (m4a, mp3, wav, ...)')
   .option('--language <lang>', 'interview language')
   .option('--speakers <n>', 'number of speakers')
-  .option('--asr <provider>', 'mlx or openai')
   .option('--model <id>', 'transcription model')
   .option('--report-model <id>', 'report model')
   .option('--provider <name>', 'openrouter or lmstudio')
@@ -493,6 +498,13 @@ program
 
     console.log(banner());
 
+    if (!mlxSupported()) {
+      ui.fail('Transcription is supported only on macOS with Apple Silicon.');
+      process.exitCode = 1;
+      ui.outro(red('Unsupported platform.'));
+      return;
+    }
+
     config = await configureHfToken(config, requestedDiarize);
     const ready = await bootstrap(config, flags, requestedDiarize);
     if (!ready) {
@@ -512,10 +524,7 @@ program
     const diarize = decision.diarize;
 
     const outputDir = defaultRunDir(audio);
-    const asr = resolveAsrProvider(config, {
-      requested: opts['asr'] as 'mlx' | 'openai' | undefined,
-      mlxSupported: mlxSupported(),
-    });
+    const asr = resolveAsrProvider();
 
     const wantReport = opts['report'] !== false;
     config = await configureReportProvider(config, wantReport, requestedProvider);

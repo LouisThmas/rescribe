@@ -1,4 +1,4 @@
-export type Platform = 'darwin' | 'linux' | 'win32' | 'other';
+export type Platform = 'darwin' | 'other';
 
 export interface Probe {
   platform: Platform;
@@ -74,8 +74,7 @@ export function planRepairs(probe: Probe, options: PlanOptions = { diarize: true
     });
   }
 
-  // MLX is Apple-Silicon-only. Elsewhere transcription runs against a remote
-  // endpoint, so nothing local is needed and nothing local should be offered.
+  // Local transcription is supported only on macOS with Apple Silicon.
   const mlxSupported = probe.platform === 'darwin' && probe.arch === 'arm64';
   if (!mlxSupported) return repairs;
 

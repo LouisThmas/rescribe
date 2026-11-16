@@ -3,17 +3,12 @@ import { homedir } from 'node:os';
 import { dirname, join } from 'node:path';
 
 export type ReportProvider = 'openrouter' | 'lmstudio';
-export type AsrProvider = 'mlx' | 'openai';
 
 export interface AsrConfig {
-  provider: AsrProvider;
   model: string;
   language: string;
   diarize: boolean;
   timestamps: boolean;
-  /** Base URL for the `openai` ASR provider. */
-  baseUrl: string;
-  apiKey: string;
   hfToken: string;
 }
 
@@ -41,13 +36,10 @@ export interface Config {
 
 export const DEFAULT_CONFIG: Config = {
   asr: {
-    provider: 'mlx',
     model: 'Qwen/Qwen3-ASR-1.7B',
     language: 'auto',
     diarize: true,
     timestamps: true,
-    baseUrl: 'https://api.openai.com/v1',
-    apiKey: '',
     hfToken: '',
   },
   report: {
@@ -67,8 +59,6 @@ export const DEFAULT_CONFIG: Config = {
 export interface ConfigEnv {
   RESCRIBE_OPENROUTER_API_KEY?: string | undefined;
   RESCRIBE_LMSTUDIO_URL?: string | undefined;
-  RESCRIBE_ASR_API_KEY?: string | undefined;
-  RESCRIBE_ASR_BASE_URL?: string | undefined;
   HF_TOKEN?: string | undefined;
   PYANNOTE_AUTH_TOKEN?: string | undefined;
 }
@@ -124,12 +114,6 @@ export function mergeConfig({ file, env, flags }: MergeInput = {}): Config {
     }
     if (env.RESCRIBE_LMSTUDIO_URL !== undefined) {
       envPatch.report = { ...envPatch.report, lmstudioUrl: env.RESCRIBE_LMSTUDIO_URL };
-    }
-    if (env.RESCRIBE_ASR_API_KEY !== undefined) {
-      envPatch.asr = { ...envPatch.asr, apiKey: env.RESCRIBE_ASR_API_KEY };
-    }
-    if (env.RESCRIBE_ASR_BASE_URL !== undefined) {
-      envPatch.asr = { ...envPatch.asr, baseUrl: env.RESCRIBE_ASR_BASE_URL };
     }
     if (env.HF_TOKEN !== undefined) {
       envPatch.asr = { ...envPatch.asr, hfToken: env.HF_TOKEN };

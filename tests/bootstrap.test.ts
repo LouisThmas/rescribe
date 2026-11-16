@@ -33,11 +33,11 @@ describe('planRepairs', () => {
     expect(mac.find((r) => r.id === 'install-ffmpeg')?.command).toContain('brew');
   });
 
-  it('plans nothing local on Linux, where transcription is remote', () => {
+  it('does not offer platform-specific installs on unsupported systems', () => {
     const repairs = planRepairs(
       {
         ...healthy,
-        platform: 'linux',
+        platform: 'other',
         arch: 'x64',
         uv: { present: false },
         ffmpeg: { present: false },
@@ -48,14 +48,6 @@ describe('planRepairs', () => {
       { diarize: true },
     );
     expect(repairs.map((r) => r.id)).toEqual([]);
-  });
-
-  it('still requires Node 20+ on Linux', () => {
-    const repairs = planRepairs(
-      { ...healthy, platform: 'linux', arch: 'x64', nodeMajor: 18 },
-      { diarize: true },
-    );
-    expect(repairs.map((r) => r.id)).toEqual(['upgrade-node']);
   });
 
   it('plans the mlx tool install when it is missing', () => {
@@ -102,10 +94,10 @@ describe('planRepairs', () => {
     expect(repairs.map((r) => r.id)).not.toContain('hf-token');
   });
 
-  it('never offers MLX on Linux', () => {
+  it('never offers MLX on unsupported systems', () => {
     const repairs = planRepairs({
       ...healthy,
-      platform: 'linux',
+      platform: 'other',
       mlxAsr: { present: false },
     });
     expect(repairs.map((r) => r.id)).not.toContain('install-mlx-asr');
